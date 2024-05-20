@@ -47,5 +47,4 @@ Python Library
 
    1. Hold a long position of BTCUSDT Future in Binance at UTC time 0:00:00, 8:00:00 16:00:00 to earn one funding rate fee
 
-   
 
