@@ -3,7 +3,7 @@ import pandas
 import time
 
 exchange_a = ccxt.binance({})
-# exchange_a.set_sandbox_mode(True)
+exchange_a.set_sandbox_mode(True)
 
 # exchange_a.apiKey = 'YOUR_API_KEY'
 # exchange_a.secret  = 'YOUR_SECRET'
@@ -33,15 +33,19 @@ while True:
     # When the buy price on exchange A is higher than the sell price on exchange B
     # we have an arbitrage opportunity
     # We can buy on exchange B and sell on exchange A
-    if a_buy > b_sell:
+    if b_sell > a_buy:
         print('Arbitrage opportunity found')
         print(f'{exchange_a.name} buy: {a_buy}, {exchange_b.name} sell: {b_sell}')
         print(f'{exchange_a.name} sell: {a_sell}, {exchange_b.name} buy: {b_buy}')
-        print('Profit: ', a_buy - b_sell)
+        print('Profit: ', b_sell - a_buy)
         
         # Place orders here
+        print('Placing orders')
+        print('Creating market buy order on exchange A')
+
         # exchange_a.create_market_buy_order('BTC/USD', 0.001)
         # exchange_b.create_market_sell_order('BTC/USD', 0.001)
+        print('Creating market sell order on exchange B')
         print('Orders placed')
         
     # elif b_buy > a_sell:
