@@ -7,7 +7,7 @@ import random
 import numpy as np
 import datetime as dt
 
-import talib
+# import talib
 
 from typing import Dict, List, Optional, Sequence, Union, cast
 from abc import abstractmethod
