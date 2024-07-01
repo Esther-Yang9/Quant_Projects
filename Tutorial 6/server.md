@@ -20,8 +20,6 @@ conda create -n trading python=3.11
 conda activate trading
 ```
 
-
-
 ## Install Scheduler
 
 ```bash
