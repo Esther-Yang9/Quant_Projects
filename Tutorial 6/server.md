@@ -11,6 +11,10 @@ sudo yum install tmux
 sudo yum install wget
 ```
 
+## Clone the repo
+
+https://github.com/jacarandastock/Quant_Projects.git
+
 ## Install Python/Conda
 
 https://docs.anaconda.com/miniconda/#quick-command-line-install
